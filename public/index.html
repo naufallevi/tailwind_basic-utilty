@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Basic Utilty 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        border: 0px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-6xl font-bold text-center my-8 bg-linear-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">Tailwind</h1>
+
+    <section class="my-10 mx-2 bg-yellow-500">
+      <h2 class="font-semibold text-center">Spacing</h2>
+      <div class="w-50 mx-auto m-2 text-center bg-violet-500">Margin</div>
+      <div class="px-5 py-3 text-center bg-crimson">Padding</div>
+    </section>
+
+    <section class="my-10 mx-2 bg-linear-to-tr from-blue-950 via-amber-600 to-teal-900">
+      <h2 class="font-semibold text-center">Sizing</h2>
+      <div class="w-1/2 h-50 m-auto bg-cyan-500">Width & Height</div>
+    </section>
+
+    <section class="mb-96 font-caveat max-w-3xl mx-auto px-4">
+      <h2 class="mb-2 text-4xl font-bold">Typography</h2>
+      <div class="mb-4 text-lg">Friday, 12 December 2025</div>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur inventore, earum repellat quasi saepe voluptas deserunt <a href="#" class="underline font-semibold text-blue-800">ipsum</a> officiis ab vitae. Eius pariatur
+        perferendis, optio dolorem, ad adipisci sunt libero eligendi atque distinctio ipsa excepturi dicta ea aspernatur ab dolore! Incidunt, veritatis? Eveniet neque placeat adipisci cupiditate ea est deleniti labore!
+      </p>
+      <blockquote class="mb-2 italic font-light text-lg bg-gray-200">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis ipsam sequi consectetur hic illo distinctio aliquid voluptatem non incidunt."</blockquote>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis totam doloribus temporibus exercitationem eos. Sit dolorum molestias fugiat error? Deserunt iure eligendi adipisci, optio fugiat atque placeat sunt totam neque!
+        Numquam, voluptate. Eos, a hic!
+      </p>
+    </section>
+  </body>
+</html>

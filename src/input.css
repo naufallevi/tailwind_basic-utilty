@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-caveat: "Caveat Brush", cursive; 
+  --color-crimson: #DC143C;
+}
