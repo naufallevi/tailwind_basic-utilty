@@ -6,6 +6,18 @@
   --font-caveat: "Caveat Brush", cursive;
   --font-poppins: "Poppins", sans-serif;
   --color-crimson: #dc143c;
+  --animate-spin-slow: spin 10s linear infinite;
+  --animate-shake: dance 0.3s linear infinite;
+
+  @keyframes dance {
+    0%,
+    100% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+  }
 }
 
 @layer components {
