@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --font-caveat: "Caveat Brush", cursive; 
-  --color-crimson: #DC143C;
+  --font-caveat: "Caveat Brush", cursive;
+  --font-poppins: "Poppins", sans-serif;
+  --color-crimson: #dc143c;
+}
+
+@layer components {
+  #toggle:checked ~ label .toggle-circle {
+    @apply translate-x-4;
+  }
 }
