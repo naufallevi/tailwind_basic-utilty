@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -123,7 +123,33 @@
 
     <div class="w-40 h-40 bg-crimson rounded-lg shadow-2xl border-t-2 mx-auto mt-20 animate-shake flex justify-center items-center"></div>
 
+    <hr class="my-20" />
+
+    <div class="container mx-auto px-10">
+      <div class="border rounded-lg shadow-lg p-5 relative">
+        <div class="w-10 h-10 bg-gray-300 rounded-full flex absolute -top-5 left-1/2 -translate-x-1/2 cursor-pointer"><span class="font-bold text-2xl m-auto text-red-500">&#10005;</span></div>
+        <img src="images/wolf.jpg" alt="Wolf" class="w-40 float-left mr-5" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum voluptatum a, asperiores perspiciatis soluta quidem excepturi! Veniam consequuntur saepe corrupti minima adipisci, a natus sunt perferendis veritatis voluptatum
+          hic dolorum accusamus atque deleniti repellat possimus debitis omnis ea similique aliquid, nemo consectetur quibusdam. Velit nam, eligendi animi voluptates cum tempore. Quod, aliquam iste et non porro modi tenetur quas est. Dicta
+          doloremque quisquam iste suscipit quibusdam! Repellendus molestiae itaque nam ratione, laudantium voluptates magni aut enim illum blanditiis quam, adipisci, voluptatum qui laborum labore debitis. Est illo alias voluptate quisquam
+          maiores eum id. Veniam eos voluptatem ipsam nesciunt! Accusamus?
+        </p>
+      </div>
+    </div>
+
+    <div class="w-10 h-10 bg-blue-500 rounded-full shadow-lg flex fixed bottom-5 left-5"><a href="#" class="text-2xl m-auto">⬆️</a></div>
     <div class="mb-200"></div>
+
+    <div id="gallery-columns" class="container mx-auto border rounded-lg shadow-lg p-5 columns-3">
+      <img src="https://picsum.photos/seed/3123/600/400" alt="Random Images" />
+      <img src="https://picsum.photos/seed/546/600/400" alt="Random Images" />
+      <img src="https://picsum.photos/seed/4564/600/400" alt="Random Images" />
+      <img src="https://picsum.photos/seed/3445/600/400" alt="Random Images" />
+      <img src="https://picsum.photos/seed/32/600/400" alt="Random Images" />
+      <img src="https://picsum.photos/seed/22/600/400" alt="Random Images" />
+      <img src="https://picsum.photos/seed/7896/600/400" alt="Random Images" />
+    </div>
 
     <!-- TOGGLE -->
     <script>
@@ -132,6 +158,14 @@
 
       toggle.addEventListener("click", function () {
         toggle.checked ? html.classList.add("dark") : html.classList.remove("dark");
+      });
+    </script>
+
+    <!-- IMAGE GALLERY COLUMNS -->
+    <script>
+      const imgColumns = document.querySelectorAll("#gallery-columns img");
+      imgColumns.forEach((img) => {
+        img.classList.add("mb-5");
       });
     </script>
   </body>
