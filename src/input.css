@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
   --font-caveat: "Caveat Brush", cursive;
   --font-poppins: "Poppins", sans-serif;
@@ -17,6 +15,25 @@
     50% {
       transform: rotate(10deg);
     }
+  }
+}
+
+@utility grid-card {
+  @apply bg-red-300 aspect-4/3 md:max-xl:aspect-3/4 rounded-lg overflow-hidden hover:scale-95 transition-all duration-600;
+}
+
+@utility grid-card-image {
+  @apply w-full h-full bg-[url('./images/grid-images/1.jpg')] bg-cover group-hover:scale-125 transition-all duration-600;
+}
+
+@utility bg-neon {
+  background-color: #ccff00;
+}
+
+@layer base {
+  h1 {
+    font-size: 120px;
+    color: theme(--color-crimson);
   }
 }
 
